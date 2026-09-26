@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <div>
+                <h1>Welcome to Your Dashboard</h1>
+                <p>Authentication System</p>
+            </div>
+
+            <button type="button" id="logoutButton">
+                Logout
+            </button>
+        </header>
+
+        <section class="dashboard-card">
+            <h2>My Profile</h2>
+
+            <div class="profile-details">
+                <p><strong>Name:</strong> <span id="userName">Loading...</span></p>
+                <p><strong>Email:</strong> <span id="userEmail">Loading...</span></p>
+                <p><strong>Account Status:</strong> <span>Active</span></p>
+            </div>
+        </section>
+
+        <section class="dashboard-card">
+            <h2>Account Overview</h2>
+            <p>You have successfully logged in to your account.</p>
+            <p>Your account information is displayed above.</p>
+        </section>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
